@@ -1,0 +1,519 @@
+@light: #fff;
+@bg-color: #f8f8f8;
+@txt-color: #242830;
+
+/* Fonts */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype'),
+        url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/Roboto-Bold.eot');
+    src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff'),
+        url('../fonts/Roboto-Bold.ttf') format('truetype'),
+        url('../fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+body {
+	color: @light;
+	font-family: 'Roboto', sans-serif;
+}
+button {
+	outline: none;
+}
+/* Главный экран */
+.nav {
+	ul {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		list-style: none;
+		li {
+			margin: 0 2rem;
+			a {
+				font-family: 'RobotoBold', sans-serif;
+				text-decoration: none;
+				color: @light;
+				&::after {
+					content: '';
+					display: block;
+					margin-top: 1rem;
+					width: 50%;
+					height: 2px;
+					background-color: #0b5e8f;
+					transition: all 0.2s;
+					transform: scale(0);
+				}
+				&:hover {
+					text-decoration: none;
+					&::after {
+						transform: scale(1);
+					}
+				}
+			}
+		}
+	}
+	&-btn {
+		display: block;
+		background: #0b5e8f url('../img/main/find.png') center no-repeat;
+		padding: 1.2rem;
+		border: none;
+		border-radius: 1rem;
+		margin-top: -1rem;
+		outline: none;
+	}
+}
+.main {
+	background:  url('../img/main/main-bg.png') center no-repeat;
+	background-size: cover;
+	padding-bottom: 20rem;
+	.header {
+		padding: 3rem 0;
+		p {
+			padding: 0;
+			margin: 0;
+			line-height: 5rem;
+			font-size: 1.3rem;
+		}
+		&-logo {
+			max-width: 100%;
+			margin-top: -1rem;
+		}
+		.small {
+			display: none;
+		}
+		&-phone {
+			font-family: 'RobotoBold', sans-serif;
+			float: right;
+		}
+		&-btn {
+			margin-top: 0.5rem;
+			padding: 1rem 2rem;
+			background-color: transparent;
+			border: 2px solid @light;
+			border-radius: 2rem;
+			outline: none;
+			font-family: 'RobotoBold', sans-serif;
+			font-size: 1.1rem;
+			&:hover {
+				// background-color: #0d6090;
+				background-image: linear-gradient(-18deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%);
+				border-color: #0d6090;
+			}
+		}
+	}
+	.content {
+		padding: 14rem 0;
+		h1 {
+			margin-bottom: 4rem;
+			font-size: 4.5rem;
+			font-family: 'RobotoBold', sans-serif;
+			letter-spacing: 1.22px;
+		}
+		p {
+			font-size: 15px;
+			letter-spacing: 0.32px;
+		}
+		&-btn {
+			margin-top: 3.5rem;
+			// background-image: linear-gradient(-18deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%);
+			background-color: #0d6090;
+			padding: 1.4rem 3rem;
+			border-radius: 2.4rem;
+			border: none;
+			font-size: 15px;
+			font-family: 'RobotoBold', sans-serif;
+			outline: none;
+			letter-spacing: 0.3px;
+			&:hover {
+				background-color: darken(#0d6090, 10%);
+			}
+		}
+	}
+}
+
+/* Наши услуги */
+.services {
+	min-height: 45rem;
+	background-color: @bg-color;
+	position: relative;
+	.container {
+		position: absolute;
+		margin-left: 50%;
+		transform: translateX(-50%);
+		background-color: #f8f8f8;
+		padding: 5rem 4rem;
+		margin-top: -11rem;
+		.col-md-4 {
+			padding: 3px;
+		}
+	}
+	h2 {
+		margin-bottom: 4rem;
+		text-align: center;
+		color: @txt-color;
+		font-size: 2.3rem;
+		font-family: 'RobotoBold', sans-serif;
+		text-transform: uppercase;
+	}
+	&-card {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: @light;
+		min-height: 18rem;
+		padding: 2.5rem;
+		padding-left: 6rem;
+		color: @txt-color;
+		font-size: 1.6rem;
+		font-weight: 400;
+		.active {
+			display: none;
+		}
+		.info {
+			text-align: right;
+			max-width: 15.3rem;
+			font-size: 16px;
+			font-weight: 600;
+			button {
+				display: none;
+				float: right;
+				padding: 1rem 2.5rem;
+				background-color: transparent;
+				color: @light;
+				border-radius: 25px;
+				border: 2px solid #ffffff;
+				&:hover {
+					transition: all 0.2s;
+					background-color: @light;
+					color: @txt-color;
+				}
+			}
+		}
+		&:hover {
+			background-color: #272e3c;
+			transition: all 0.4s;
+			.info {
+				color: @light;
+			}			
+			.nonactive {
+				display: none;
+			}
+			.active {
+				display: block;
+			}
+			.more-inform {
+				display: block;
+			}
+		}
+	}
+}
+
+/* Описание  */
+.description {
+	padding: 9rem 0;
+	color: @txt-color;
+	position: relative;
+	img {
+		max-width: 69rem;
+		position: absolute;
+		top: 0;
+	}
+	h2 {
+		font-family: 'RobotoBold', sans-serif;
+		font-size: 2.3rem;
+		letter-spacing: 0.46px;
+		text-transform: uppercase;
+	}
+	h4 {
+		margin-bottom: 4rem;
+		font-size: 1.5rem;
+	}
+	p {
+		font-size: 15px;
+		letter-spacing: 0.3px;
+	}
+}
+
+/* Новости */
+.news {
+	padding: 7rem 0;
+	background-color: #f8f8f8;
+	h2 {
+		margin-bottom: 4rem;
+		text-align: center;
+		color: @txt-color;
+		font-size: 2.3rem;
+		font-family: 'RobotoBold', sans-serif;
+		text-transform: uppercase;
+	}
+	&-card {
+		margin-right: 0.5rem;
+		background-color: @light;
+		img {
+			max-width: 100%;
+		}
+		p {
+			color: @txt-color;
+			&.desc {
+				padding: 3rem 4rem;
+				padding-bottom: 0;
+				text-align: center;
+				font-family: 'RobotoBold', sans-serif;
+				font-size: 16px;
+			}
+			&.date {
+				padding: 3rem;
+				font-size: 1.5rem;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+/* Работа по всему миру */
+.work {
+	padding: 15rem 0;
+	background: #fff url('../img/airplane.png') center no-repeat;
+	background-size: cover;
+	h2 {
+		text-align: right;
+		font-family: 'RobotoBold', sans-serif;
+		font-size: 4rem;
+		letter-spacing: 1.22px;
+	}
+	p {
+		text-align: right;
+		font-size: 1.6rem;
+		letter-spacing: 0.32px;
+	}
+	button {
+		float: right;
+		margin-top: 3rem;
+		padding: 1rem 2.5rem;
+		border-radius: 24px;
+		background-color: #ffffff;
+		background-image: linear-gradient(-18deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%);
+		border: none;
+		font-size: 15px;
+		font-family: 'RobotoBold', sans-serif;
+		&:hover {
+			background-image: none;
+			background-color: #0b5e8f;
+		}
+	}
+}
+
+/* Партнеры */
+.partners {
+	padding: 6rem 0;
+	h2 {
+		text-align: center;
+		margin-bottom: 4rem;
+		font-family: 'RobotoBold', sans-serif;
+		font-size: 2.3rem;
+		color: @txt-color;
+		text-transform: uppercase;
+		letter-spacing: 0.46px;
+	}
+	&-card {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 15rem;
+		img {
+			&.active {
+				display: none;
+			}
+		}
+		&:hover {
+			box-shadow: 0 0 18px rgba(0, 0, 0, 0.06);
+			img {
+				&.nonactive {
+					display: none;
+				}
+				&.active {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+/* Запрос на услуги */
+.inquiry {
+	padding: 2rem 0;
+	background: #e6e6e6 url('../img/bg.png') center -21rem no-repeat;
+	background-size: cover;
+	h2 {
+		margin-bottom: 2rem;
+		text-align: center;
+		font-family: 'RobotoBold', sans-serif;
+		font-size: 23px;
+		text-transform: uppercase;
+		color: @txt-color;
+		letter-spacing: 0.46px;
+	}
+	form {
+		text-align: center;
+		input {
+			padding: 0.6rem 0rem;
+			margin-bottom: 3rem;
+			display: block;
+			width: 100%;
+			background-color: transparent;
+			border: none;
+			border-bottom: 1px solid #7d76ae;
+			color: @txt-color;
+			font-family: 'RobotoBold', sans-serif;
+			font-size: 15px;
+			letter-spacing: 0.3px;
+			outline: none;
+			&.way {
+				padding-left: 2.5rem;
+				background: url('../img/pointer.png') 0 center no-repeat;
+			}
+		}
+		button {
+			background-image: linear-gradient(-18deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%);
+			border-radius: 2.4rem;
+			padding: 1rem 2.5rem;
+			border: none;
+			font-family: 'RobotoBold', sans-serif;
+			font-size: 15px;
+			color: @light;
+			letter-spacing: 0.3px;
+			outline: none;
+			&:hover {
+				background-image: none;
+				background-color: #0b5e8f;
+			}
+		}
+		p {
+			margin-top: 3rem;
+			margin-bottom: 5rem;
+			font-family: 'Roboto', sans-serif;
+			font-size: 12px;
+			line-height: 24px;
+			color: @txt-color;
+			letter-spacing: 0.3px;
+		}
+	}
+}
+
+/* Подвал */
+.footer {
+	padding: 3rem 0;
+	.row {
+		display: flex;
+		align-items: center;
+	}
+	.nav {
+		margin-top: 4rem;
+	}
+	a {
+		color: @txt-color !important;
+	}
+}
+
+
+
+
+@media(max-width: 1199px) {
+	.description {
+		padding: 3rem 0;
+		img {
+			max-width: 57rem;
+		}
+	}
+	.news {
+		&-card {
+			p {
+				&.desc {
+					padding: 3rem 3rem;
+				}
+			}
+		}
+	}
+	.work {
+		h2 {
+			font-size: 3.9rem;
+		}
+	}
+	.partners {
+		&-card {
+			min-height: 13rem;
+			img {
+				max-width: 96%;
+			}
+		}
+	}
+	.footer {
+		.nav {
+			ul {
+				li {
+					a {
+						font-size: 1.2rem;
+					}
+				}
+			}
+		}
+	}
+}
+@media(max-width: 991px) {
+	.main {
+		.header {
+			.large {
+				display: none;
+			}
+			.small {
+				display: block;
+			}
+		}
+	}
+	.services {
+		min-height: 64rem;
+	}
+	.description {
+		padding: 1rem 0 0;
+		h2 {
+			font-size: 2rem;
+		}
+		h4 {
+			margin-bottom: 1rem;
+		}
+		p {
+			font-size: 1.2rem;
+		}
+		img {
+			max-width: 45rem;
+		}
+	}
+	.news {
+		&-card {
+			margin-bottom: 2.5rem;
+			img {
+				width: 100%;
+			}
+			p {
+				padding: 1rem 3rem;
+			}
+		}
+	}
+}
+@media(max-width: 767px) {
+
+}
