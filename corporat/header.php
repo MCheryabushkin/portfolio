@@ -5,8 +5,8 @@
 				<p>Импортно-экспортная компания</p>
 			</div>
 			<div class="col-md-5 col-sm-2">
-				<img class="header-logo large" src="img/main/logo.png" alt="Logo">
-				<img class="header-logo small" src="img/main/logo-2.png" alt="Logo">
+				<a href="index.php"><img class="header-logo large" src="img/main/logo.png" alt="Logo"></a>
+				<a href="index.php"><img class="header-logo small" src="img/main/logo-2.png" alt="Logo"></a>
 			</div>
 			<div class="col-md-2 col-sm-3">
 				<p class="header-phone">8 (961) 996-25-03</p>

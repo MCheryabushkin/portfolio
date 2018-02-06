@@ -1,5 +1,6 @@
 @header-bg:  #272e3c;
 @about-bg: #f8f8f8;
+@txt-color: #242830;
 
 @import url(../css/fonts.css);
 
@@ -28,6 +29,7 @@
 				padding: 2rem;
 				list-style: none;
 				&:hover {
+					transition: all 0.4s;
 					background-color: @header-bg;
 					img.nonactive {
 						display: none;
@@ -61,6 +63,41 @@
 						letter-spacing: 0.32px;
 					}
 				}
+			}
+		}
+	}
+}
+.about-page {
+	color: @txt-color;
+	h2 {
+		margin-bottom: 2rem;
+		font-family: 'RobotoBold', sans-serif;
+    font-size: 2.3rem;
+    letter-spacing: 0.46px;
+    text-transform: uppercase;
+	}
+	.description {
+		padding: 0;
+		margin-bottom: 4rem;
+	}
+	.galery {
+		margin-bottom: 4rem;
+		img {
+			display: inline-block;
+			max-width: 35rem;
+		}
+	}
+	.reviews {
+		margin-bottom: 4rem;
+		.review {
+			padding: 3rem;
+			margin-bottom: 1rem;
+			background-color: #fff;
+			font-family: 'Roboto', sans-serif;
+			font-size: 16px;
+			&-head {
+				font-weight: 700;
+				letter-spacing: 0.32px;
 			}
 		}
 	}

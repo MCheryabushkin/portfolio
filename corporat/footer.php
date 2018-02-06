@@ -9,7 +9,7 @@
 			<div class="col-md-7">
 				<nav class="nav">
 						<ul>
-							<li><a href="javascript:;">О компании</a></li>
+							<li><a href="page.php">О компании</a></li>
 							<li><a href="javascript:;">Услуги</a></li>
 							<li><a href="javascript:;">Новости</a></li>
 							<li><a href="javascript:;">Калькулятор</a></li>
