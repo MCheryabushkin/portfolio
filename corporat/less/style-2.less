@@ -1,0 +1,67 @@
+@header-bg:  #272e3c;
+@about-bg: #f8f8f8;
+
+@import url(../css/fonts.css);
+
+.main {
+	padding: 0;
+	padding: 3rem 0;
+	background: none;
+	background-color: @header-bg;
+}
+.about {
+	padding: 5rem 0;
+	background-color: @about-bg;
+	.service-list {
+		h2 {
+			margin-bottom: 2rem;
+			color: #242830;
+			font-family: 'RobotoBold', sans-serif;
+			font-size: 20px;
+			text-transform: uppercase;
+			letter-spacing: 0.4px;
+		}
+		ul {
+			padding: 0;
+			background-color: #fff;
+			li {
+				padding: 2rem;
+				list-style: none;
+				&:hover {
+					background-color: @header-bg;
+					img.nonactive {
+						display: none;
+					}
+					img.active {
+						display: block;
+					}
+					p {
+						color: #fff;
+					}
+					a {
+						text-decoration: none;
+					}
+				}
+				a {
+					display: flex;
+					align-items: center;
+					img {
+						max-width: 3rem;
+						max-height: 3rem;
+						&.active {
+							display: none;
+						}
+					}
+					p {
+						margin: 0;
+						margin-left: 2rem;
+						color: #242830;
+						font-family: 'Roboto', sans-serif;
+						font-size: 16px;
+						letter-spacing: 0.32px;
+					}
+				}
+			}
+		}
+	}
+}

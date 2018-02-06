@@ -1,1 +1,445 @@
-@font-face{font-family:'Roboto';src:url('../fonts/Roboto-Regular.eot');src:url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),url('../fonts/Roboto-Regular.woff2') format('woff2'),url('../fonts/Roboto-Regular.woff') format('woff'),url('../fonts/Roboto-Regular.ttf') format('truetype'),url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'RobotoBold';src:url('../fonts/Roboto-Bold.eot');src:url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),url('../fonts/Roboto-Bold.woff2') format('woff2'),url('../fonts/Roboto-Bold.woff') format('woff'),url('../fonts/Roboto-Bold.ttf') format('truetype'),url('../fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');font-weight:bold;font-style:normal}body{color:#fff;font-family:'Roboto',sans-serif}button{outline:none}.nav ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;list-style:none}.nav ul li{margin:0 2rem}.nav ul li a{font-family:'RobotoBold',sans-serif;text-decoration:none;color:#fff}.nav ul li a::after{content:'';display:block;margin-top:1rem;width:50%;height:2px;background-color:#0b5e8f;-webkit-transition:all .2s;transition:all .2s;-webkit-transform:scale(0);transform:scale(0)}.nav ul li a:hover{text-decoration:none}.nav ul li a:hover::after{-webkit-transform:scale(1);transform:scale(1)}.nav-btn{display:block;background:#0b5e8f url('../img/main/find.png') center no-repeat;padding:1.2rem;border:none;border-radius:1rem;margin-top:-1rem;outline:none}.main{background:url('../img/main/main-bg.png') center no-repeat;background-size:cover;padding-bottom:20rem}.main .header{padding:3rem 0}.main .header p{padding:0;margin:0;line-height:5rem;font-size:1.3rem}.main .header-logo{max-width:100%;margin-top:-1rem}.main .header .small{display:none}.main .header-phone{font-family:'RobotoBold',sans-serif;float:right}.main .header-btn{margin-top:.5rem;padding:1rem 2rem;background-color:transparent;border:2px solid #fff;border-radius:2rem;outline:none;font-family:'RobotoBold',sans-serif;font-size:1.1rem}.main .header-btn:hover{background-image:linear-gradient(-18deg, #0b5e8f 0, #2e76a0 50%, #0b5e8f 100%);border-color:#0d6090}.main .content{padding:14rem 0}.main .content h1{margin-bottom:4rem;font-size:4.5rem;font-family:'RobotoBold',sans-serif;letter-spacing:1.22px}.main .content p{font-size:15px;letter-spacing:.32px}.main .content-btn{margin-top:3.5rem;background-color:#0d6090;padding:1.4rem 3rem;border-radius:2.4rem;border:none;font-size:15px;font-family:'RobotoBold',sans-serif;outline:none;letter-spacing:.3px}.main .content-btn:hover{background-color:#094161}.services{min-height:45rem;background-color:#f8f8f8;position:relative}.services .container{position:absolute;margin-left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);background-color:#f8f8f8;padding:5rem 4rem;margin-top:-11rem}.services .container .col-md-4{padding:3px}.services h2{margin-bottom:4rem;text-align:center;color:#242830;font-size:2.3rem;font-family:'RobotoBold',sans-serif;text-transform:uppercase}.services-card{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;background-color:#fff;min-height:18rem;padding:2.5rem;padding-left:6rem;color:#242830;font-size:1.6rem;font-weight:400}.services-card .active{display:none}.services-card .info{text-align:right;max-width:15.3rem;font-size:16px;font-weight:600}.services-card .info button{display:none;float:right;padding:1rem 2.5rem;background-color:transparent;color:#fff;border-radius:25px;border:2px solid #fff}.services-card .info button:hover{-webkit-transition:all .2s;transition:all .2s;background-color:#fff;color:#242830}.services-card:hover{background-color:#272e3c;-webkit-transition:all .4s;transition:all .4s}.services-card:hover .info{color:#fff}.services-card:hover .nonactive{display:none}.services-card:hover .active{display:block}.services-card:hover .more-inform{display:block}.description{padding:9rem 0;color:#242830;position:relative}.description img{max-width:69rem;position:absolute;top:0}.description h2{font-family:'RobotoBold',sans-serif;font-size:2.3rem;letter-spacing:.46px;text-transform:uppercase}.description h4{margin-bottom:4rem;font-size:1.5rem}.description p{font-size:15px;letter-spacing:.3px}.news{padding:7rem 0;background-color:#f8f8f8}.news h2{margin-bottom:4rem;text-align:center;color:#242830;font-size:2.3rem;font-family:'RobotoBold',sans-serif;text-transform:uppercase}.news-card{margin-right:.5rem;background-color:#fff}.news-card img{max-width:100%}.news-card p{color:#242830}.news-card p.desc{padding:3rem 4rem;padding-bottom:0;text-align:center;font-family:'RobotoBold',sans-serif;font-size:16px}.news-card p.date{padding:3rem;font-size:1.5rem;text-transform:uppercase}.work{padding:15rem 0;background:#fff url('../img/airplane.png') center no-repeat;background-size:cover}.work h2{text-align:right;font-family:'RobotoBold',sans-serif;font-size:4rem;letter-spacing:1.22px}.work p{text-align:right;font-size:1.6rem;letter-spacing:.32px}.work button{float:right;margin-top:3rem;padding:1rem 2.5rem;border-radius:24px;background-color:#fff;background-image:linear-gradient(-18deg, #0b5e8f 0, #2e76a0 50%, #0b5e8f 100%);border:none;font-size:15px;font-family:'RobotoBold',sans-serif}.work button:hover{background-image:none;background-color:#0b5e8f}.partners{padding:6rem 0}.partners h2{text-align:center;margin-bottom:4rem;font-family:'RobotoBold',sans-serif;font-size:2.3rem;color:#242830;text-transform:uppercase;letter-spacing:.46px}.partners-card{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;min-height:15rem}.partners-card img.active{display:none}.partners-card:hover{-webkit-box-shadow:0 0 18px rgba(0,0,0,0.06);box-shadow:0 0 18px rgba(0,0,0,0.06)}.partners-card:hover img.nonactive{display:none}.partners-card:hover img.active{display:block}.inquiry{padding:2rem 0;background:#e6e6e6 url('../img/bg.png') center -21rem no-repeat;background-size:cover}.inquiry h2{margin-bottom:2rem;text-align:center;font-family:'RobotoBold',sans-serif;font-size:23px;text-transform:uppercase;color:#242830;letter-spacing:.46px}.inquiry form{text-align:center}.inquiry form input{padding:.6rem 0;margin-bottom:3rem;display:block;width:100%;background-color:transparent;border:none;border-bottom:1px solid #7d76ae;color:#242830;font-family:'RobotoBold',sans-serif;font-size:15px;letter-spacing:.3px;outline:none}.inquiry form input.way{padding-left:2.5rem;background:url('../img/pointer.png') 0 center no-repeat}.inquiry form button{background-image:linear-gradient(-18deg, #0b5e8f 0, #2e76a0 50%, #0b5e8f 100%);border-radius:2.4rem;padding:1rem 2.5rem;border:none;font-family:'RobotoBold',sans-serif;font-size:15px;color:#fff;letter-spacing:.3px;outline:none}.inquiry form button:hover{background-image:none;background-color:#0b5e8f}.inquiry form p{margin-top:3rem;margin-bottom:5rem;font-family:'Roboto',sans-serif;font-size:12px;line-height:24px;color:#242830;letter-spacing:.3px}.footer{padding:3rem 0}.footer .row{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.footer .nav{margin-top:4rem}.footer a{color:#242830 !important}@media (max-width:1199px){.description{padding:3rem 0}.description img{max-width:57rem}.news-card p.desc{padding:3rem 3rem}.work h2{font-size:3.9rem}.partners-card{min-height:13rem}.partners-card img{max-width:96%}.footer .nav ul li a{font-size:1.2rem}}@media (max-width:991px){.main .header .large{display:none}.main .header .small{display:block}.services{min-height:64rem}.description{padding:1rem 0 0}.description h2{font-size:2rem}.description h4{margin-bottom:1rem}.description p{font-size:1.2rem}.description img{max-width:45rem}.news-card{margin-bottom:2.5rem}.news-card img{width:100%}.news-card p{padding:1rem 3rem}}
+@import url(../css/fonts.css);
+body {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+button {
+  outline: none;
+}
+/* Главный экран */
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.nav ul li {
+  margin: 0 2rem;
+}
+.nav ul li a {
+  font-family: 'RobotoBold', sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+}
+.nav ul li a::after {
+  content: '';
+  display: block;
+  margin-top: 1rem;
+  width: 50%;
+  height: 2px;
+  background-color: #0b5e8f;
+  transition: all 0.2s;
+  transform: scale(0);
+}
+.nav ul li a:hover {
+  text-decoration: none;
+}
+.nav ul li a:hover::after {
+  transform: scale(1);
+}
+.nav-btn {
+  display: block;
+  background: #0b5e8f url('../img/main/find.png') center no-repeat;
+  padding: 1.2rem;
+  border: none;
+  border-radius: 1rem;
+  margin-top: -1rem;
+  outline: none;
+}
+.main {
+  background: url('../img/main/main-bg.png') center no-repeat;
+  background-size: cover;
+  padding-bottom: 20rem;
+}
+.main .header {
+  padding: 3rem 0;
+}
+.main .header p {
+  padding: 0;
+  margin: 0;
+  line-height: 5rem;
+  font-size: 1.3rem;
+}
+.main .header-logo {
+  max-width: 100%;
+  margin-top: -1rem;
+}
+.main .header .small {
+  display: none;
+}
+.main .header-phone {
+  font-family: 'RobotoBold', sans-serif;
+  float: right;
+}
+.main .header-btn {
+  margin-top: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2rem;
+  outline: none;
+  font-family: 'RobotoBold', sans-serif;
+  font-size: 1.1rem;
+}
+.main .header-btn:hover {
+  background-image: linear-gradient(-18deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%);
+  border-color: #0d6090;
+}
+.main .content {
+  padding: 14rem 0;
+}
+.main .content h1 {
+  margin-bottom: 4rem;
+  font-size: 4.5rem;
+  font-family: 'RobotoBold', sans-serif;
+  letter-spacing: 1.22px;
+}
+.main .content p {
+  font-size: 15px;
+  letter-spacing: 0.32px;
+}
+.main .content-btn {
+  margin-top: 3.5rem;
+  background-color: #0d6090;
+  padding: 1.4rem 3rem;
+  border-radius: 2.4rem;
+  border: none;
+  font-size: 15px;
+  font-family: 'RobotoBold', sans-serif;
+  outline: none;
+  letter-spacing: 0.3px;
+}
+.main .content-btn:hover {
+  background-color: #094161;
+}
+/* Наши услуги */
+.services {
+  min-height: 45rem;
+  background-color: #f8f8f8;
+  position: relative;
+}
+.services .container {
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background-color: #f8f8f8;
+  padding: 5rem 4rem;
+  margin-top: -11rem;
+}
+.services .container .col-md-4 {
+  padding: 3px;
+}
+.services h2 {
+  margin-bottom: 4rem;
+  text-align: center;
+  color: #242830;
+  font-size: 2.3rem;
+  font-family: 'RobotoBold', sans-serif;
+  text-transform: uppercase;
+}
+.services-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  min-height: 18rem;
+  padding: 2.5rem;
+  padding-left: 6rem;
+  color: #242830;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.services-card .active {
+  display: none;
+}
+.services-card .info {
+  text-align: right;
+  max-width: 15.3rem;
+  font-size: 16px;
+  font-weight: 600;
+}
+.services-card .info button {
+  display: none;
+  float: right;
+  padding: 1rem 2.5rem;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 25px;
+  border: 2px solid #ffffff;
+}
+.services-card .info button:hover {
+  transition: all 0.2s;
+  background-color: #ffffff;
+  color: #242830;
+}
+.services-card:hover {
+  background-color: #272e3c;
+  transition: all 0.4s;
+}
+.services-card:hover .info {
+  color: #ffffff;
+}
+.services-card:hover .nonactive {
+  display: none;
+}
+.services-card:hover .active {
+  display: block;
+}
+.services-card:hover .more-inform {
+  display: block;
+}
+/* Описание  */
+.description {
+  padding: 9rem 0;
+  color: #242830;
+  position: relative;
+}
+.description img {
+  max-width: 69rem;
+  position: absolute;
+  top: 0;
+}
+.description h2 {
+  font-family: 'RobotoBold', sans-serif;
+  font-size: 2.3rem;
+  letter-spacing: 0.46px;
+  text-transform: uppercase;
+}
+.description h4 {
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+}
+.description p {
+  font-size: 15px;
+  letter-spacing: 0.3px;
+}
+/* Новости */
+.news {
+  padding: 7rem 0;
+  background-color: #f8f8f8;
+}
+.news h2 {
+  margin-bottom: 4rem;
+  text-align: center;
+  color: #242830;
+  font-size: 2.3rem;
+  font-family: 'RobotoBold', sans-serif;
+  text-transform: uppercase;
+}
+.news-card {
+  margin-right: 0.5rem;
+  background-color: #ffffff;
+}
+.news-card img {
+  max-width: 100%;
+}
+.news-card p {
+  color: #242830;
+}
+.news-card p.desc {
+  padding: 3rem 4rem;
+  padding-bottom: 0;
+  text-align: center;
+  font-family: 'RobotoBold', sans-serif;
+  font-size: 16px;
+}
+.news-card p.date {
+  padding: 3rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+/* Работа по всему миру */
+.work {
+  padding: 15rem 0;
+  background: #ffffff url('../img/airplane.png') center no-repeat;
+  background-size: cover;
+}
+.work h2 {
+  text-align: right;
+  font-family: 'RobotoBold', sans-serif;
+  font-size: 4rem;
+  letter-spacing: 1.22px;
+}
+.work p {
+  text-align: right;
+  font-size: 1.6rem;
+  letter-spacing: 0.32px;
+}
+.work button {
+  float: right;
+  margin-top: 3rem;
+  padding: 1rem 2.5rem;
+  border-radius: 24px;
+  background-color: #ffffff;
+  background-image: linear-gradient(-18deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%);
+  border: none;
+  font-size: 15px;
+  font-family: 'RobotoBold', sans-serif;
+}
+.work button:hover {
+  background-image: none;
+  background-color: #0b5e8f;
+}
+/* Партнеры */
+.partners {
+  padding: 6rem 0;
+}
+.partners h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-family: 'RobotoBold', sans-serif;
+  font-size: 2.3rem;
+  color: #242830;
+  text-transform: uppercase;
+  letter-spacing: 0.46px;
+}
+.partners-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 15rem;
+}
+.partners-card img.active {
+  display: none;
+}
+.partners-card:hover {
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.06);
+}
+.partners-card:hover img.nonactive {
+  display: none;
+}
+.partners-card:hover img.active {
+  display: block;
+}
+/* Запрос на услуги */
+.inquiry {
+  padding: 2rem 0;
+  background: #e6e6e6 url('../img/bg.png') center -21rem no-repeat;
+  background-size: cover;
+}
+.inquiry h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: 'RobotoBold', sans-serif;
+  font-size: 23px;
+  text-transform: uppercase;
+  color: #242830;
+  letter-spacing: 0.46px;
+}
+.inquiry form {
+  text-align: center;
+}
+.inquiry form input {
+  padding: 0.6rem 0rem;
+  margin-bottom: 3rem;
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #7d76ae;
+  color: #242830;
+  font-family: 'RobotoBold', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  outline: none;
+}
+.inquiry form input.way {
+  padding-left: 2.5rem;
+  background: url('../img/pointer.png') 0 center no-repeat;
+}
+.inquiry form button {
+  background-image: linear-gradient(-18deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%);
+  border-radius: 2.4rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  font-family: 'RobotoBold', sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  letter-spacing: 0.3px;
+  outline: none;
+}
+.inquiry form button:hover {
+  background-image: none;
+  background-color: #0b5e8f;
+}
+.inquiry form p {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  color: #242830;
+  letter-spacing: 0.3px;
+}
+/* Подвал */
+.footer {
+  padding: 3rem 0;
+}
+.footer .row {
+  display: flex;
+  align-items: center;
+}
+.footer .nav {
+  margin-top: 4rem;
+}
+.footer a {
+  color: #242830 !important;
+}
+@media (max-width: 1199px) {
+  .description {
+    padding: 3rem 0;
+  }
+  .description img {
+    max-width: 57rem;
+  }
+  .news-card p.desc {
+    padding: 3rem 3rem;
+  }
+  .work h2 {
+    font-size: 3.9rem;
+  }
+  .partners-card {
+    min-height: 13rem;
+  }
+  .partners-card img {
+    max-width: 96%;
+  }
+  .footer .nav ul li a {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 991px) {
+  .main .header .large {
+    display: none;
+  }
+  .main .header .small {
+    display: block;
+  }
+  .services {
+    min-height: 64rem;
+  }
+  .description {
+    padding: 1rem 0 0;
+  }
+  .description h2 {
+    font-size: 2rem;
+  }
+  .description h4 {
+    margin-bottom: 1rem;
+  }
+  .description p {
+    font-size: 1.2rem;
+  }
+  .description img {
+    max-width: 45rem;
+  }
+  .news-card {
+    margin-bottom: 2.5rem;
+  }
+  .news-card img {
+    width: 100%;
+  }
+  .news-card p {
+    padding: 1rem 3rem;
+  }
+}
