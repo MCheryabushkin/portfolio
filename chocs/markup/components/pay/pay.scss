@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.pay  {
+	height: 82px;
+	border-top: 2px sold #f7f6f5;
+	.container {
+		height: 82px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	&__list {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		li {
+			list-style: none;
+			width: 150px;
+			height: 32px;
+			&:first-of-type {
+				background: url("../../static/img/general/VISA.png") center center no-repeat;
+			}
+			&:nth-of-type(2) {
+				background: url("../../static/img/general/yandex.png") center center no-repeat;
+			}
+			&:nth-of-type(3) {
+				background: url("../../static/img/general/qiwi.png") center center no-repeat;
+			}
+			&:nth-of-type(4) {
+				background: url("../../static/img/general/robokassa-.png") center center no-repeat;
+			}
+			&:last-of-type {
+				background: url("../../static/img/general/webmoney-.png") center center no-repeat;
+			}
+			a {
+				display: block;
+				width: 150px;
+				height: 32px;
+			}
+		}
+	}
+}

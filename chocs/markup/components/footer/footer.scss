@@ -1,0 +1,105 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.container {
+	margin: 0 auto;
+	padding: 0 80px;
+}
+.footer {
+	&__top {
+		padding: 20px 0 14px;
+		background-color: $txt-color;
+		.container{
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+	&__logo {
+		margin-top: 10px;
+		img {
+			margin-bottom: 30px;
+		}
+		p {
+			opacity: 0.4;
+			color: $text;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 21px;
+			span {
+				font-family: 'Linotte', 'Calibri', sans-serif;
+				font-weight: 600;
+			}
+		}
+	}
+	&__list {
+		margin-left: -50px;
+		display: flex;
+		justify-content: space-between;
+		width: 470px;
+		li {
+			list-style: none;
+			ul {
+				li {
+					a {
+						text-decoration: none;
+						color: $text;
+						font-size: 18px;
+						font-weight: 400;
+						line-height: 36px;
+					}
+				}
+			}
+		}
+	}
+	&__social {
+		text-align: right;
+		a{
+			&:last-of-type,
+			&:nth-of-type(3) {
+				display: inline-block;
+				margin-top: 20px;
+				width: 30px;
+				height: 30px;
+			}
+			&:first-of-type,
+			&:nth-of-type(2) {
+				display: block;
+				text-decoration: none;
+			}
+		}
+		&-vk {
+			background: url("../../static/img/general/vk.png") bottom center no-repeat;
+			margin-right: 5px;
+		}
+		&-fb {
+			background: url("../../static/img/general/fb.png") bottom center no-repeat;
+		}
+	}
+	&__phone {
+		color: $text;
+		font-size: 24px;
+		font-weight: 700;
+	}
+	&__mail {
+		color: #ffb400;
+		margin-top: 10px;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 36px;
+	}
+	&__bot {
+		background-color: #211d1c;
+		.container {
+			p, a {
+				display: inline-block;
+				opacity: 0.2;
+				color: $text;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 36px;
+			}
+		}
+	}
+}

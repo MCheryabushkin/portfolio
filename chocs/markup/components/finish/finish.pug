@@ -1,0 +1,16 @@
+mixin finish-card(data)
+		.finish__card
+			h3.finish__title=data.title
+			figure.finish__img
+				img(src="%=static=%img/general/" + data.img + ".png", alt="")
+			h3.finish__price= data.price + "руб."
+			p.finish__status Завершен
+			p.finish__date= data.date
+			p.finish__author= data.author
+
+mixin finish(data)
+	.finish
+		h2 Завершенные акции
+		.container
+			for prop in data
+				+finish-card(prop)

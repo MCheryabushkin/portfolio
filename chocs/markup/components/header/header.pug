@@ -1,0 +1,26 @@
+mixin header(data)
+		.header
+			.container
+				section.header__logo
+					a(href="header.html")
+						img(src="%=static=%img/general/logo.png")
+				section.header__enter
+					button(type="submit") Регистрация
+					a(href="javascript:;") Вход 
+				section.header__person
+					.header__registration
+						img(src="%=static=%img/general/profile.png")
+						a(href="javascript:;") Короткова Ирина
+						.header__menu
+							ul
+								li 
+									a(href="javascript:;") Профиль
+								li 
+									a(href="javascript:;") Мои аукционы
+								li 
+									a(href="javascript:;") Выход
+					.header__rates
+						p Осталось ставок
+						span 127
+				section.header__phone
+					a(href="javascript:;") +7 (812) 165-86-47

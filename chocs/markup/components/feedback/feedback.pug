@@ -1,0 +1,29 @@
+mixin feedback(data)
+		.feedback
+			.container
+				section.feedback__contacts
+					h2 Обратная связь
+					ul
+						li
+							img(src="__static__img/general/feedback/phone.png", alt="phone")
+							p.phone +7 (812) 165-86-47
+						li
+							img(src="__static__img/general/feedback/mail.png", alt="mail")
+							p.mail 
+								a(href="mailto:hello@chocs.ru") hello@chocs.ru
+						li
+							img(src="__static__img/general/feedback/pin.png", alt="geolocation")
+							p.address Пермь, ул. Н. Островского, 49
+					p.feedback__description
+						| Мы хотим создать для вас качественный продукт, но это невозможно без Вашей помощи. Пожалуйста оставляйте Ваши пожелания, отзывы и предложения.
+						| Мы обязательно их учтем в будущих обновлениях платформы.
+				section.feedback__form
+					h2 Напишите нам
+					form
+						label(for="name") Ваше имя
+						input(type="text", id="name", required)
+						label(for="phone") Ваш телефон или e-mail
+						input(type="text", id="phone", required)
+						label(for="message") Ваше сообщение
+						textarea(type="textarea", rows="5", id="message", required)
+						button(type="submit") Отправить

@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Calibri', sans-serif;
+}
+.banner {
+	min-height: 400px;
+	background: url("../../static/img/general/8-layers.png");
+	background-size: cover;
+	.container {
+		min-height: 400px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	&__info {
+		padding-left: 90px;
+		h1 {
+			color: #fffefe;
+			margin-bottom: 15px;
+			font-size: 48px;
+			font-weight: 700;
+			line-height: 58px;
+		}
+		h3 {
+			color: #fefefe;
+			font-size: 24px;
+			font-weight: 400;
+		}
+		button {
+			width: 205px;
+			height: 50px;
+			margin-top: 25px;
+			border-radius: 25px;
+			border: 2px solid $red-btn;
+			background-color: $red-btn;
+			p {
+				color: $text;
+				font-size: 20px;
+				font-weight: 700;
+			}
+		}
+	}
+}

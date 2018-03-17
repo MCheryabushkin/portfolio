@@ -1,0 +1,128 @@
+mixin product(data)
+	.product
+		.container
+			section.product__info
+				h2.product__title Caso c4
+				p.product__name Кофеварка
+				img(src="%=static=%img/general/product/coffee-machine.png")
+				section.product__price 
+					h3 Полная стоимость товара — 9 500 руб.
+					p Вы можете купить его после завершения аукциона.
+					|Стоимость потраченных ставок будет вычтена из стоимости товара.
+					button(type="button").product__buy Купить
+				section.product__tabs#tabs
+					input(type="radio", name='tabs', checked)#tab_1
+					label(for="tab_1")#tab_l1 Информация
+					.tab-item#tab_c1
+						p Корпус из высококачественной нержавеющей стали Оптимальная температура заваривания - 80 °C Панель управление со светодиодной подсветкой Функция поддержания температуры Программируемый таймер AromaControl (более длительный контакт с водой для усиления аромата) Съемный резервуар для воды Стеклянная чаша с прорезиненной ручкой на 12 чашек Пластина для нагрева с антипригарным покрытием Постоянный сетчатый «золотой» фильтр (GoldTone Filter) Фильтр для воды из активированного угля (с индикатором замены) Автоматическое отключение 
+					input(type="radio", name='tabs')#tab_2
+					label(for="tab_2")#tab_l2 Технические характеристики
+					.tab-item#tab_c2
+						p Много всего другого понаписано про эту замечательную кофеварку и бла-бла-бла...
+			section.product__auction
+				.current.running
+					p.current__balance Баланс: 
+						span 136
+					p.current__buy
+						a(href="javascript:;") Купить ставки
+					h2.current__price 448,0 руб.
+					.current__timer
+						p.timer 00:00:14
+						span 15
+					button.current__rates Сделать ставку
+					p.current__winner Mavrin89
+					table(cellpadding="5")
+						tr
+							td 11:29:44
+							td Naruto24часа
+							td 448,0 руб.
+						tr
+							td 11:29:25
+							td Nikita00Pupkin
+							td 447,9 руб.
+						tr
+							td 11:29:25
+							td wandalchik
+							td 447,8 руб.
+						tr
+							td 11:29:06
+							td СуперTeremoC
+							td 447,7 руб.
+						tr
+							td 11:29:06
+							td Naruto24часа
+							td 447,6 руб.
+						tr
+							td 11:28:46
+							td wandalchik
+							td 447,5 руб.
+					.current__checkbox
+						label(for='rates')#handles Вручную
+						input(type='checkbox')#rates
+						label(for='rates')#auto Автоставка
+					.current__auto
+						h3 Количество ставок:
+						input(type="text")
+						p Ставка будет активирована за 1 секунду до окончания таймера.
+						p При использовании автоставки несколькими игроками,
+							|порядок ставок игроков определяется случайным образом.
+						button.run__rates Запустить автоставки
+				.current.upcoming
+					h2.current__price 1,0 руб.
+					.current__timer
+						p.timer 32:46:14
+						span 15
+					button.current__rates Подать заявку
+				.complited.current
+					h2.current__price 1 050,3 руб.
+					p.complited__end Завершен 
+						span 21.06.2017 в 19:42:06
+					p.complited__winner Победитель 
+					p.complited__winner.current__winner Mavrin89
+					p.complited__auction Аукцион завершён
+					table(cellpadding="5")
+						tr
+							td 11:29:44
+							td Naruto24часа
+							td 448,0 руб.
+						tr
+							td 11:29:25
+							td Nikita00Pupkin
+							td 447,9 руб.
+						tr
+							td 11:29:25
+							td wandalchik
+							td 447,8 руб.
+						tr
+							td 11:29:06
+							td СуперTeremoC
+							td 447,7 руб.
+						tr
+							td 11:29:06
+							td Naruto24часа
+							td 447,6 руб.
+						tr
+							td 11:28:46
+							td wandalchik
+							td 447,5 руб.
+				.social__links
+					h3 Поделиться с друзьями
+					a(href="https://vk.com/feed").social__links-vk
+					a(href="https://www.facebook.com/").social__links-fb
+				.conditions
+					h3 Условия аукциона
+					img(src="%=static=%img/general/product/icon-1.png", alt="").condition__icon
+					p.conditions__item Начальная цена товара 100 руб. Каждая ставка увеличивает цену на 10 коп.
+					img(src="%=static=%img/general/product/icon-2.png", alt="").condition__icon
+					p.conditions__item Длительность аукциона 15 секунд. Каждая новая ставка перезапускает таймер аукциона, и обратный отсчет времени начинается сначала.
+					img(src="%=static=%img/general/product/icon-3.png", alt="").condition__icon
+					p.conditions__item Если ваша ставка оказалась последней, вы - победитель. Удачи в игре! 
+						span Важно! 
+						| Оформите свой выигрыш в течение 14 дней со дня победы.
+					img(src="%=static=%img/general/product/icon-4.png", alt="").condition__icon
+					p В любой момент вы можете воспользоваться предложением «Купить» и приобрести товар по рыночной цене. Стоимость потраченных ставок будет вычтена из стоимости товара.
+					p.conditions__item
+						span Важно! 
+						| Предложение действует в течение 72 часов после завершения аукциона. По истечении этого срока вы не сможете воспользоваться потраченными в аукционе ставками для оплаты товара.
+					img(src="%=static=%img/general/product/icon-5.png", alt="").condition__icon
+					p.conditions__item Победитель этого аукциона имеет право отказаться от ожидания доставки товара и получить компенсацию ставками.

@@ -1,0 +1,38 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head.pug
+    include ../components/header/header.pug
+    include ../components/banner/banner.pug
+    include ../components/menu/menu.pug
+    include ../components/category/category.pug
+    include ../components/goods/goods.pug
+    include ../components/finish/finish.pug
+    include ../components/pay/pay.pug
+    include ../components/footer/footer.pug
+
+    head
+        +head(head.defaults)
+    body.page
+        |%=symbols=%
+
+        section.page__wrapper
+
+            +header()
+            +banner()
+            +menu()
+            +category()
+            +goods(goods.goods)
+            +finish(finish.finish)
+            +pay()
+
+            .page__footer
+                +footer()
+
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

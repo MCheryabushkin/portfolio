@@ -1,0 +1,22 @@
+mixin goods-card(data)
+	.goods__card
+		h2.goods__title= data.title
+		figure
+			img(src="%=static=%img/general/" + data.img + ".png")
+		h3= data.price + " руб."
+		.goods__timer
+			p(class="goods__time goods__time-" + data.condition)= data.time
+			p.goods__chocs= data.chocs
+		if data.author
+			p.goods__author= data.author
+		else
+			p.goods__author Скоро начало
+		.goods__button
+			button(type="submit" class="goods__button-" + data.condition)
+				| #{data.button}
+
+mixin goods(data)
+	.goods
+		.container
+			for prop in data
+				+goods-card(prop)

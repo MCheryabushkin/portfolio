@@ -1,0 +1,102 @@
+.feedback {
+	padding: 40px 0 80px;
+	background-color: $body-color;
+	.container {
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+	&__contacts {
+		max-width: 50%;
+		padding: 0 100px;
+		h2 {
+			margin: 40px 0;
+			font-size: 48px;
+			font-weight: 700;
+		}
+		ul {
+			margin-bottom: 90px;
+			list-style: none;
+			li {
+				display: flex;
+				align-items: center;
+				margin-bottom: 30px;
+				img {
+					margin-right: 12px;
+				}
+				&:nth-of-type(odd) {
+					img {
+						padding-left: 7px;
+						margin-right: 18px;
+					}
+				}
+				p {
+					font-size: 20px;
+					&.phone {
+						font-size: 22px;
+						font-weight: 700;
+					}
+					a {
+						color: #86c121;
+						font-weight: 700;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+	&__description {
+		font-size: 22px;
+		font-weight: 400;
+		line-height: 32px;
+	}
+	&__form {
+		margin-right: 100px;
+		width: 100%;
+		max-width: 490px;
+		background-color: $text;
+		box-shadow: 0 5px 15px rgba(40, 35, 33, 0.06);
+		padding: 38px 30px 48px;
+		border-top: 5px solid $green;
+		h2 {
+			margin: 0;
+			margin-bottom: 30px;
+			font-size: 48px;
+			font-weight: 700;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			label {
+				margin-bottom: 10px;
+				font-size: 18px;
+				font-weight: 400;
+			}
+			input, textarea {
+				margin-bottom: 20px;
+				padding: 10px;
+				font-size: 18px;
+				font-weight: 400;
+				outline: none;
+				border: 1px solid #bfbfc0;
+				&:focus {
+					border: 1px solid $yellow-btn;
+					&:invalid {
+						border: 1px solid red;
+					}
+				}
+			}
+			button {
+				padding: 10px 0;
+				border: none;
+				border-radius: 25px;
+				background-color: $yellow-btn;
+				font-size: 20px;
+				font-weight: 700;
+				color: $text;
+				outline: none;
+			}
+		}
+	}
+}
