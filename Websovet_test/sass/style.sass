@@ -1,0 +1,435 @@
+/* Fonts */
+@import '../css/fonts.css'
+
+/* Color */
+$brown: #ca8f39
+$txt: #000
+$gray: #b5ac9d
+$white: #fff
+$footer-color: #f4f4f4
+
+
+body
+	font-family: 'OpenSans', sans-serif
+.header
+	padding: 20px 0
+	padding-bottom: 10px
+	.container
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+	&__logo
+		flex-grow: 2
+		padding-top: 10px
+		img
+			max-width: 351px
+	&__contacts
+		margin-left: -20px
+		p
+			padding: 0
+			margin: 0
+			margin-left: 10px
+			font-size: 35px
+			color: $brown
+			span
+				color: $gray
+			&.phone
+				&:before 
+					content: ''
+					margin-right: 10px
+					display: inline-block
+					height: 30px
+					width: 30px
+					background: url(../img/phone.png) center no-repeat
+					background-size: cover
+			&.email
+				font-size: 30px
+				a
+					text-decoration: none
+					color: $brown
+				&:before
+					content: ''
+					margin-right: 10px
+					display: inline-block
+					height: 22px
+					width: 28px
+					background: url(../img/mail.png) center no-repeat
+					background-size: cover
+.nav
+	padding: 5px 0
+	padding-bottom: 24px
+	.container
+		background: $brown
+		padding: 10px 0
+	ul
+		list-style: none
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		justify-content: space-around
+		flex-wrap: wrap
+		margin: 0
+		padding: 0
+		li
+			a
+				padding: 10px 30px
+				font-size: 18px
+				color: $white
+				text-decoration: none
+				&:hover
+					color: $gray
+.figure
+	.container
+		padding: 0
+	img
+		width: 100%
+.areasactivity
+	padding: 10px 0 20px
+	.container
+		text-align: center
+	h1
+		margin-bottom: 50px
+		color: $brown
+		text-transform: uppercase
+		font-family: 'OpenSansCondensed', sans-serif
+	&__list
+		margin-bottom: 20px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		flex-wrap: wrap
+		text-align: center
+		.list__item
+			padding: 0 20px
+			img
+				margin-bottom: 45px
+				max-width: 80px
+			p
+				color: $brown
+				text-transform: uppercase
+				font-family: 'OpenSansCondensed', sans-serif
+				font-size: 22px
+	button
+		padding: 8px 20px
+		border: 1px solid $brown
+		border-radius: 5px 
+		background: $white
+		color: $brown
+		font-size: 16px
+		&:hover
+			background: $brown
+			color: $white
+.regalia
+	.container
+		text-align: center
+		h2
+			margin-bottom: 35px
+			color: $brown
+			text-transform: uppercase
+			font-family: 'OpenSansCondensed', sans-serif
+			font-size: 34px
+			letter-spacing: 3px
+	&__list
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		flex-wrap: wrap
+		padding: 0 50px
+		.list__item
+			color: $txt
+			padding: 0 5px
+			&:nth-of-type(2)
+				margin-left: -24px
+			&-number
+				font-size: 48px
+				margin: 0
+				color: #625c52
+				span
+					font-size: 20px
+			&-description
+				padding: 01px 10px
+				font-size: 18px
+.about
+	margin-bottom: 70px
+	.container
+		text-align: center
+		h2
+			margin-bottom: 54px
+			color: $brown
+			text-transform: uppercase
+			font-family: 'OpenSansCondensed', sans-serif
+			font-size: 36px
+	&__information
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		flex-wrap: wrap
+		&-item
+			max-width: 48%
+			text-align: justify
+			&:last-of-type
+				padding-left: 16px
+			ul
+				padding-left: 20px	
+				margin-top: 20px
+				li
+					font-size: 18px
+			p
+				font-size: 18px
+				font-face: 'OpenSans', sans-serif
+.line
+	ul
+		list-style: none
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		padding: 0
+		margin: 0
+		li
+			display: inline-block
+			height: 5px
+			width: 300px
+			padding: 0
+			margin: 0
+			&:nth-of-type(2n+1)
+				background: $brown
+			&:nth-of-type(2n)
+				background: $gray
+.footer
+	background: $footer-color
+	.container
+		padding: 0
+	&__content
+		padding: 25px 0px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-wrap: wrap
+		p
+			margin: 0
+			color: #808080
+			font-size: 16px
+			&.license
+				a
+					text-decoration: underline
+			&.mail
+				&:before 
+					content: ''
+					margin-right: 10px
+					display: inline-block
+					height: 12px
+					width: 15px
+					background: url(../img/mail_footer.png) center no-repeat
+					background-size: cover
+			&.phone
+				&:before 
+					content: ''
+					margin-right: 10px
+					display: inline-block
+					height: 15px
+					width: 15px
+					background: url(../img/phone_footer.png) center no-repeat
+					background-size: cover
+			a
+				text-decoration: none
+				color: #808080
+	&__social
+		a
+			display: inline-block
+			width: 50px
+			height: 50px
+			border-radius: 5px
+			&.vk 
+				background: url('../img/vk.png') center no-repeat
+				background-size: cover
+			&.inst
+				margin-left: 10px
+				background: url('../img/instagram.png') center no-repeat
+				background-size: cover
+
+/* Выпадающее меню */
+.menu-list
+	position: fixed
+	width: 100vw
+	height: 100vh
+	background-color: $brown
+	z-index: 101
+	display: flex
+	justify-content: center
+	align-items: center
+	transition: all 0.5s
+	left: -100vw
+	opacity: .95
+	ul
+		list-style: none
+		padding: 0
+		text-align: center
+		li
+			width: 100vw
+		a 
+			line-height: 4
+			font-weight: 100
+			letter-spacing: 4px
+			color: $white
+			transition: all 0.2s
+			display: block
+			width: 100%
+			text-transform: uppercase
+			font-family: 'OpenSans', sans-serif
+			&:hover, &:active 
+				background: rgba(255, 255, 255, .4)
+				text-decoration: none
+				outline: none
+			&:hover 
+				text-decoration: none
+				color: darken($white, 20%)
+		.last
+			border: none
+
+@media(max-width: 991px)
+	.nav
+		ul
+			li
+				a
+					padding: 10px 15px
+					font-size: 14px
+	.areasactivity
+		&__list
+			justify-content: center
+			.list__item
+				padding: 0 24px
+				padding-bottom: 20px
+	.regalia
+		&__list
+			padding: 0 30px
+@media(max-width: 767px)
+	.header
+		.container
+			justify-content: space-between
+		&__logo
+			max-width: 40%
+			img
+				max-width: 100%
+		&__contacts
+			p
+				font-size: 16px
+				&.email
+					font-size: 16px
+	.nav
+		display: none
+	.regalia
+		&__list
+			justify-content: center
+			.list__item
+				margin: 0 30px
+				&:nth-of-type(2)
+					margin-left: 0px
+	.about
+		&__information
+			padding: 0 20px
+			&-item
+				max-width: 100%
+	.footer
+		&__content
+			padding: 25px 20px
+			justify-content: center
+			p 
+				margin-right: 10px
+				margin-top: 10px
+			.footer__social
+				margin-top: 10px
+	.menu 
+		line-height: 3.5rem
+		z-index: 103
+		position: fixed
+		top: 1rem
+		left: 1rem
+		&_active 
+			left: 0		
+		&-link 
+			position: relative
+			margin-top: .5rem
+			border-radius: 50%
+			display: block
+			width: 3rem
+			height: 3rem
+			background-color: $white
+			outline: none
+			span, span:after, span:before 
+				display: block
+				height: 2px
+				width: 16px
+				position: absolute
+				left: 50%
+				transform: translatex(-50%)
+				top: 50%
+				margin-top: -1px
+				background-color: #333			
+			span:before 
+				content: ''
+				margin-top: -5px
+				transition: all 0.2s			
+			span:after 
+				content: ''
+				margin-top: 3px
+				transition: all 0.2s			
+			&_active span 
+				background-color: transparent
+				&:before 
+					transform: rotate(135deg)
+					margin-top: 0
+					left: 1px				
+				&:after 
+					transform: rotate(-135deg)
+					margin-top: 0
+					left: 1px		
+@media(max-width: 560px)
+	.header
+		.container
+			justify-content: space-between
+		&__contacts
+			p
+				font-size: 12px
+				&.email
+					font-size: 12px
+					&:before 
+						height: 10px
+						width: 13px
+				&.phone
+					font-size: 12px
+					&:before 
+						height: 14px
+						width: 14px
+	.regalia
+		&__list
+			justify-content: center
+			.list__item
+				margin: 0 10px
+@media(max-width: 330px)
+	.footer__content
+		text-align: center
