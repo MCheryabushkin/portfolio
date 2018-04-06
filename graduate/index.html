@@ -621,8 +621,14 @@
     		var close_1 = $('.popup-close');
     		var close_2 = $('.menu-close');
     		var close_3 = $('.modal-close');
-    		link.click(function(){link.toggleClass('menu-link_active');menu.toggleClass('menu_active');});
-    		nav_link.click(function(){link.toggleClass('menu-link_active');menu.toggleClass('menu_active');});
+    		link.click(function(){
+    			link.toggleClass('menu-link_active');
+    			menu.toggleClass('menu_active');
+    		});
+    		nav_link.click(function(){
+    			link.toggleClass('menu-link_active');
+    			menu.toggleClass('menu_active');
+    		});
     		btn.click(function(){$('body').toggleClass('body-hidden');});
     		btn_1.click(function(){$('body').toggleClass('body-hidden');});
     		open.click(function(){$('body').toggleClass('body-hidden');});
